@@ -1,28 +1,4 @@
 {
-  "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
-  "plugins": {
-    "@release-it/conventional-changelog": {
-      "preset": {
-        "name": "conventionalcommits",
-        "types": [
-          { "type": "feat", "section": "Features" },
-          { "type": "fix", "section": "Bug Fixes" },
-          { "type": "perf", "section": "Performance Improvements" },
-          { "type": "refactor", "section": "Code Refactoring" },
-          { "type": "test", "section": "Tests" },
-          { "type": "build", "section": "Build System" },
-          { "type": "ci", "section": "Continuous Integration" },
-          { "type": "chore", "section": "Chores" },
-          { "type": "docs", "section": "Documentation" },
-          { "type": "style", "section": "Styles" },
-          { "type": "revert", "section": "Reverts" }
-        ],
-        "infile": "CHANGELOG.md",
-        "ignoreRecommendedBuilds": true,
-        "strictSemVer": true
-      }
-    }
-  },
   "git": {
     "commitMessage": "chore: release v${version}"
   },
@@ -30,7 +6,16 @@
     "release": true,
     "draft": false
   },
+  "npm": {
+    "publish": false
+  },
   "hooks": {
-    "after:release": "echo successfully released ${name}@${version} to ${repo.respository}"
+    "after:bump": "echo successfully released ${name}@${version} to ${repo.respository}"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
   }
 }
