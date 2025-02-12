@@ -36,6 +36,7 @@
     "husky": "^9.1.7",
     "postcss-pxtorem": "^6.1.0",
     "prettier": "^3.2.5",
+    "release-it": "^18.1.2",
     "typescript": "~5.7.2",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-icons": "^0.18.5",

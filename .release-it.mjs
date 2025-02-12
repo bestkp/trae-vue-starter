@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   git: {
     commitMessage: 'chore: release v${version}',
     tagName: 'v${version}',

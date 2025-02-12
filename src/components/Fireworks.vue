@@ -16,7 +16,7 @@ const canvasRef = ref<HTMLCanvasElement | null>(null);
 let ctx: CanvasRenderingContext2D | null = null;
 let particles: Particle[] = [];
 let animationId = 0;
-let lastTime = 0;
+// let lastTime = 0;
 let resizeHandler: (() => void) | null = null;
 
 const colors = ['#ff0000', '#ffa500', '#ffff00'];
