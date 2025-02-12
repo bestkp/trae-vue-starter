@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "format": "prettier --write .",
     "prepare": "husky",
-    "release": "release-it --yes"
+    "release": "release-it"
   },
   "dependencies": {
     "pinia": "^3.0.0",
