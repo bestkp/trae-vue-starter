@@ -7,12 +7,14 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "format": "prettier --write .",
     "prepare": "husky",
     "release": "release-it"
   },
   "dependencies": {
+    "@snake/utils": "workspace:*",
     "pinia": "^3.0.0",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.5.13",

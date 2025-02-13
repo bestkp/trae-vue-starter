@@ -88,9 +88,9 @@ const draw = () => {
   });
 };
 
-const animate = (currentTime: number) => {
+const animate = () => {
   // const deltaTime = currentTime - lastTime;
-  lastTime = currentTime;
+  // lastTime = currentTime;
 
   update();
   draw();
@@ -129,7 +129,7 @@ const initCanvas = () => {
 
 onMounted(() => {
   initCanvas();
-  lastTime = performance.now();
+  // lastTime = performance.now();
   animationId = requestAnimationFrame(animate);
 });
 
@@ -153,9 +153,6 @@ onUnmounted(() => {
 
 <style scoped>
 .fireworks-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: black;

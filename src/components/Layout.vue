@@ -5,7 +5,11 @@ import { Icon } from '@iconify/vue';
 <template>
   <div class="app-container">
     <header class="app-header">
-      <h1><Icon icon="game-icons:snake" class="header-icon" /> 贪吃蛇游戏</h1>
+      <h1><Icon icon="game-icons:snake" class="header-icon" /> 贪吃蛇游戏 <Icon icon="twemoji:cold-face" width="36" height="36" /></h1>
+      
+      <RouterLink to="fireworks" class="link">
+        开始游戏
+      </RouterLink>
     </header>
     
     <div class="app-main">
@@ -79,6 +83,11 @@ body {
   align-items: center;
   gap: 37px;
   color: #fff;
+}
+
+.link {
+  color: #fff;
+  font-size: 24px;
 }
 
 .header-icon {
